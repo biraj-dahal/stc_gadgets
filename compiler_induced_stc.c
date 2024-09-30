@@ -51,7 +51,7 @@ void syscall(foo_t *uptr) {
 // Main function to test syscall
 int main() {
     // Creating a test foo_t structure
-    foo_t test_data = {42, "Hello World"};
+    foo_t test_data = {23, "Hello World"};
 
     // Test with valid data
     printf("Testing with valid data:\n");
