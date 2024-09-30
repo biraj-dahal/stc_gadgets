@@ -20,6 +20,8 @@ int copy_from_user(foo_t *kfoo, foo_t *uptr, size_t size) {
     return 0; // Success
 }
 
+
+
 // The function f to be called with the foo_t structure
 void f(foo_t *foo) {
     if (foo) {
@@ -28,6 +30,7 @@ void f(foo_t *foo) {
         printf("No data to process.\n");
     }
 }
+
 
 // The syscall function
 void syscall(foo_t *uptr) {
